@@ -88,9 +88,7 @@ Judo:
     Enthaertungsanlage:
         name: Wasser (Judo)
         sv_page: room
-        sv_hide: 'No'
         sv_img: measure_water_meter.svg
-        sv_heading_center: ""
         
         hardness:
             residual:
@@ -138,7 +136,7 @@ Judo:
             weekly:
                 name: Wasserverbrauch wöchentlich
                 sv_blocksize: 1
-                sv_widget: "{{ plot.period('', 'Judo.Enthaertungsanlage.water_consumtion.daily.water_weekly', 'avg', '52w', 'now', '', '', 52, '', '', '', '', 'advanced') }}"
+                sv_widget: "{{ plot.period('', 'Judo.Enthaertungsanlage.water_consumtion.weekly.water_weekly', 'avg', '52w', 'now', '', '', 52, '', '', '', '', 'advanced') }}"
                 struct: judo_water_struct
                 water:
                     judo_cfg: '{"group": "consumption", "command": "water weekly", "msgnumber": "1"}'
@@ -162,7 +160,7 @@ Judo:
             monthly:
                 name: Wasserverbrauch monatlich
                 sv_blocksize: 1
-                sv_widget: "{{ plot.period('', 'Judo.Enthaertungsanlage.water_consumtion.daily.water_monthly', 'avg', '12m', 'now', '', '', 12, '', '', '', '', 'advanced') }}"
+                sv_widget: "{{ plot.period('', 'Judo.Enthaertungsanlage.water_consumtion.monthly.water_monthly', 'avg', '12m', 'now', '', '', 12, '', '', '', '', 'advanced') }}"
                 struct: judo_water_struct
                 water:
                     judo_cfg: '{"group": "consumption", "command": "water monthly", "msgnumber": "1"}'
@@ -206,7 +204,7 @@ Judo:
                     database: Init
                     crontab: 
                     - "55 23 28-31 * = 1"                    
-                    eval: max(0, sh...water.water_1()) + max(0, sh...water.water_2()) + max(0, sh...water.water_3()) + max(0, sh...water.water_4()) + max(0, sh...water.water_5()) + max(0, sh...water.water_6()) + max(0, sh...water.water_7()) + max(0, sh...water.water_8()) + max(0, sh...water.water_9()) + max(0, sh...water.water_10()) + max(0, sh...water.water_11()) + max(0, sh...water.water_12()) + max(0, sh...water.water_13()) + max(0, sh...water.water_14())
+                    eval: max(0, sh...water.water_1()) + max(0, sh...water.water_2()) + max(0, sh...water.water_3()) + max(0, sh...water.water_4()) + max(0, sh...water.water_5()) + max(0, sh...water.water_6()) + max(0, sh...water.water_7()) + max(0, sh...water.water_8()) + max(0, sh...water.water_9()) + max(0, sh...water.water_10()) + max(0, sh...water.water_11()) + max(0, sh...water.water_12()) + max(0, sh...water.water_13()) + max(0, sh...water.water_14()) + max(0, sh...water.water_15()) + max(0, sh...water.water_16()) + max(0, sh...water.water_17()) + max(0, sh...water.water_18()) + max(0, sh...water.water_19()) + max(0, sh...water.water_20()) + max(0, sh...water.water_21()) + max(0, sh...water.water_22()) + max(0, sh...water.water_23()) + max(0, sh...water.water_24()) + max(0, sh...water.water_25()) + max(0, sh...water.water_26()) + max(0, sh...water.water_27()) + max(0, sh...water.water_28()) + max(0, sh...water.water_29()) + max(0, sh...water.water_30()) + max(0, sh...water.water_31())
                     
                     
 ```
