@@ -1,0 +1,212 @@
+# Metadata for the Smart-Plugin
+plugin:
+    # Global plugin attributes
+    type: interface                 # plugin type (gateway, interface, protocol, system, web)
+    description:
+        de: "Anbindung einer JUDO-Enthärtungsanlage
+             Das Plugin funktioniert aktuell mit den folgenden Modulen von JUDO:
+               * JUDO isoft safe Plus
+            "
+    maintainer: agailer
+    tester: agailer
+    state: ready
+
+    documentation: 'todo'
+    support: 'todo'
+
+    version: 1.0.0.0               # Plugin version
+    sh_minversion: 1.3             # minimum shNG version to use this plugin
+#    sh_maxversion:                # maximum shNG version to use this plugin (leave empty if latest)
+    multi_instance: False          # plugin supports multi instance
+    restartable: unknown
+    classname: Judo                # class containing the plugin
+
+parameters:
+    # Definition of parameters to be configured in etc/plugin.yaml
+
+    ipaddress:
+        type: ip
+        mandatory: True
+        description:
+            de: "IP Adresse des Gerätes"
+            en: "IP address of device"
+    port:
+        type: str
+        default: 8124
+        description:
+            de: "Port Kommunikation"
+            en: "port communication"
+
+    username:
+        type: str
+        mandatory: True
+        description:
+            de: "Benutzername"
+            en: "Username"
+
+    password:
+        type: str
+        mandatory: True
+        description:
+            de: "Passwort"
+            en: "Password"
+
+    device_number:
+        type: str
+        mandatory: True
+        description:
+            de: "Seriennummer"
+            en: "serialnumber"
+    cycle:
+        type: int
+        default: 300
+        description:
+            de: "Zykluszeit"
+            en: "Cycle time"
+
+
+item_attributes:
+    # Definition of item attributes defined by this plugin
+
+    judo_cfg:
+        type: dict
+# todo
+
+
+item_structs: 
+  # Definition of item-structure templates for this plugin
+    judo_water_struct:
+        water:
+            type: list
+            
+            water_1:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_2:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_3:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_4:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_5:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_6:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_7:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_8:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_9:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_10:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_11:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_12:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_13:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_14:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_15:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_16:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_17:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_18:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_19:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_20:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_21:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_22:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_23:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_24:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_25:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_26:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_27:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_28:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_29:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_30:
+                type: num
+                visu_acl: ro
+                database: Yes
+            water_31:
+                type: num
+                visu_acl: ro
+                database: Yes
+        
+logic_parameters: NONE
+    # Definition of logic parameters defined by this plugin
+
+plugin_functions: NONE
+    # Definition of function interface of the plugin
+
