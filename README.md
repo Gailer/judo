@@ -12,36 +12,36 @@ Is currently working with the following modules:
 
   * JUDO isoft safe Plus
   
-### Hint
-  water_daily => Verbrauch in 3 Stunden zusammengefasst, -1 = kein Verbrauch
+## Hint
+
+water_daily => Verbrauch in 3 Stunden zusammengefasst, -1 = kein Verbrauch
   3 4 2 4 2 5
   => 0-3 Uhr = 3 Liter
   => 3-6 Uhr = 4 Liter
   => 6-9 Uhr = 2 Liter
   ...
-  ---
-  water_weekly => Verbrauch der Woche, Ergebnisse pro Tag beginnend mit Montag, -1 kein Verbrauch
+
+ water_weekly => Verbrauch der Woche, Ergebnisse pro Tag beginnend mit Montag, -1 kein Verbrauch
   10 20 30 40 50 60 70
   => 10 Liter Montag
   => 20 Liter Dienstag 
   ...
-  ---
-  water_monthly => Verbrauch des Monats, pro Tag
+
+ water_monthly => Verbrauch des Monats, pro Tag
   10 10 12 14 15
   => 10 Liter am 01.
   => 10 Liter am 02.
   => 12 Liter am 03.
   ...
-  ---
-  water_yearly => Verbrauch des Jahres, pro Monats
+
+ water_yearly => Verbrauch des Jahres, pro Monats
   100 200 205
   => 100 Liter im Januar
   => 200 Liter im Februar
   => 205 Liter im März 
   ...
-  ---
-  water_total => Verbrauch gesamt
-  ---
+
+ water_total => Verbrauch gesamt
   
 
 ## Configuration
@@ -57,9 +57,9 @@ Judo:
     class_path: plugins.judo
     ipaddress: <IP-ADDRESS>
     port: 8124
-	username: <USERNAME>
-	password: <PASSWORD
-	device_number: <DEVICE-NUMBER>
+    username: <USERNAME>
+    password: <PASSWORD
+    device_number: <DEVICE-NUMBER>
     cycle: 300    
 ```
 
